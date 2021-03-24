@@ -27,39 +27,50 @@ The following **optional** features are implemented:
 * [x] More than 4 functional game buttons
 * [x] Playback speeds up on each turn
 * [x] Computer picks a different pattern each time the game is played
-* [ ] Player only loses after 3 mistakes (instead of on the first mistake)
-* [ ] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-* [ ] User has a limited amount of time to enter their guess on each turn
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app!
+* [x] Game button appearance change goes beyond color (e.g. add an image)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](your-link-here)
+![]http://g.recordit.co/AGLxCD2BWY.gif
+
+Random pattern is created every new game:
+
+http://g.recordit.co/eCk7htQqrs.gif
 
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+
+- The outside resources I used to complete this project are stackoverflow.com and w3schools.com. I used stackoverflow.com to solve the sound issues that google chrome was 
+causing and find way to make images fit on the buttons. Similiarly, I used w3schools.com to find resources to improve the design of the game. 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+- One of the challenges I faced while creating this game was a sound error. Everytime I reopened the game, the buttons would work fine but there was no sound. 
+To understand what was causing this error I opened the console using developer tools on chrome. There was an error saying "The AudioContext was not allowed to start. 
+It must be resumed (or created) after a user gesture on the page.". I had no idea what the error meant so I went to stackoverflow.com to see if other people were facing 
+the same problem and turns out this error was caused because of a recent update on google chrome. To fix this problem I set up a function on script.js that would tell the
+browser to resume the sound context of the game as soon as the user clicks on the game. Here is the function: function touchStarted() { AudioContext().resume(); }
+
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+- One of the questions I have about web development is what the future of web-developemnt is going to look like as sectors such as Artificial
+Intelligence, Virtual reality, Machine learning are growing rapidly. It is inevitable that these sectors are going to be a big part of web development
+and some companies like Amazon are already using machine learning to increase their business. Combination of virtual reality and web development also holds a 
+great future. As companies like squarespace.com have gained popularity it has become possible for anyone to develop websites which makes me wonder how web development 
+businesses and web-developers are adjusting to this change.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
-
+- If i had a few more hours to work on the project I would make the game more interactable. Most game give the user pop-up messages to let them know what is going on with the game and 
+what their next step should be. I would add pop-up notifications updating the user about
+the number of mistakes they have remaining before they lose the game. Similiarly, I would also program the buttons to play parts of a song rather than random tones.
+I would also add an option that lets user decide the number of buttons they want on the game.
 
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Jeevan Bastola]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
