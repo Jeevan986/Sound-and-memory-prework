@@ -33,7 +33,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<img src='http://g.recordit.co/AGLxCD2BWY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/eD4g9mHOYw.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Random pattern is created every new game:
 
