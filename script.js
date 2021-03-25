@@ -44,11 +44,11 @@ function stopGame(){
 // Sound Synthesis Functions
 const freqMap = {
   1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2,
-  5: 520,
-  6: 650
+  2: 293.6,
+  3: 329.6,
+  4: 369.9,
+  5: 415.3,
+  6: 466.2
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -58,6 +58,7 @@ function playTone(btn,len){
     stopTone()
   },len)
 }
+
 function startTone(btn){
   if(!tonePlaying){
     o.frequency.value = freqMap[btn]
@@ -79,6 +80,11 @@ g.connect(context.destination)
 g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
+
+function touchStarted() {
+  AudioContext().resume();
+}
+touchStarted();
 
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit")
