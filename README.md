@@ -32,11 +32,12 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![]http://g.recordit.co/AGLxCD2BWY.gif
+<img src='http://g.recordit.co/AGLxCD2BWY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Random pattern is created every new game:
 
-http://g.recordit.co/eCk7htQqrs.gif
+<img src='http://g.recordit.co/eCk7htQqrs.gif' title='Video Walkthrough_2' width='' alt='Video Walkthrough' />
+
 
 
 ## Reflection Questions
