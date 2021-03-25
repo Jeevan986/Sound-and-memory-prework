@@ -107,7 +107,7 @@ function playClueSequence(){
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-    delay += clueHoldTime/2
+    delay += (clueHoldTime-40);
     delay += cluePauseTime;
   }
 }
